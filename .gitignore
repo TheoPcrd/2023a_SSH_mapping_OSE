@@ -5,3 +5,6 @@
 /data_dev/
 /data/
 /src/__pycache__/
+/nb_diags_THEO/data
+/nb_diags_THEO/figures
+/nb_diags_THEO/uv_score_mask/results/
