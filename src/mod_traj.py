@@ -51,7 +51,7 @@ def prepare_drifter_data(ds_drifters,maps):
     box = [lon_min,lon_max,lat_min,lat_max,time_min,time_max]
 
 
-    ds_drifters.longitude[ds_drifters.longitude<0] = 360 + ds_drifters.longitude[ds_drifters.longitude<0] 
+    ds_drifters.longitude[ds_drifters.longitude<0] = 360 + ds_drifters.longitude[ds_drifters.longitude<0] #?
     ds_drifters = ds_drifters.where(ds_drifters.longitude>lon_min,drop=True)
     ds_drifters = ds_drifters.where(ds_drifters.longitude<lon_max,drop=True)
     ds_drifters = ds_drifters.where(ds_drifters.latitude>lat_min,drop=True)
